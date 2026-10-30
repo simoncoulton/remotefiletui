@@ -9,17 +9,40 @@ the endpoint, the current remote path and the config folder), the two panes, and
 with the most useful keys (a status message replaces it for a few seconds; keys that don't fit are
 dropped, never the important ones). `?` lists everything.
 
-**Homebrew**
+## Screenshots
+
+![Connect screen](docs/connect.png)
+*Connect screen: saved connections and the connection form.*
+
+![Connected](docs/connected.png)
+*Browsing: local pane on the left, remote pane on the right.*
+
+![1Password integration](docs/onepassword.png)
+*Choosing a password from 1Password.*
+
+![Help](docs/help.png)
+*`?` lists every key.*
+
+## Installation
+
+### macOS (Homebrew)
+
+Homebrew on macOS (Apple Silicon and Intel) is the supported way to install, with prebuilt binaries:
 
 ```
 brew tap simoncoulton/remotefiletui https://github.com/simoncoulton/remotefiletui
 brew install remotefiletui
 ```
 
-**From source**
+### Arch Linux and other distributions
+
+There is no package for Arch or its derivatives yet. Build from source with a recent
+[Rust toolchain](https://rustup.rs):
 
 ```
-cargo run --release        # or: cargo install --path . && remotefiletui
+git clone https://github.com/simoncoulton/remotefiletui
+cd remotefiletui
+cargo install --path .       # installs to ~/.cargo/bin; or: cargo run --release
 ```
 
 ## Keys
