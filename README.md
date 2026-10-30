@@ -9,6 +9,15 @@ the endpoint, the current remote path and the config folder), the two panes, and
 with the most useful keys (a status message replaces it for a few seconds; keys that don't fit are
 dropped, never the important ones). `?` lists everything.
 
+**Homebrew**
+
+```
+brew tap simoncoulton/remotefiletui https://github.com/simoncoulton/remotefiletui
+brew install remotefiletui
+```
+
+**From source**
+
 ```
 cargo run --release        # or: cargo install --path . && remotefiletui
 ```

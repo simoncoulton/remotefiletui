@@ -2,6 +2,9 @@
 name = "remotefiletui"
 version = "0.1.0"
 edition = "2024"
+description = "Terminal UI for browsing and transferring files over SFTP, FTP(S) and S3"
+license = "MIT"
+repository = "https://github.com/simoncoulton/remotefiletui"
 
 [dependencies]
 anyhow = "1.0.104"
