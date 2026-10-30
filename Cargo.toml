@@ -5,6 +5,7 @@ edition = "2024"
 description = "Terminal UI for browsing and transferring files over SFTP, FTP(S) and S3"
 license = "MIT"
 repository = "https://github.com/simoncoulton/remotefiletui"
+rust-version = "1.94"
 
 [dependencies]
 anyhow = "1.0.104"

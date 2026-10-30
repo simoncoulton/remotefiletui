@@ -37,7 +37,7 @@ brew install remotefiletui
 ### Arch Linux and other distributions
 
 There is no package for Arch or its derivatives yet. Build from source with a recent
-[Rust toolchain](https://rustup.rs):
+[Rust toolchain](https://rustup.rs) (1.94 or newer):
 
 ```
 git clone https://github.com/simoncoulton/remotefiletui
