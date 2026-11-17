@@ -2930,14 +2930,15 @@ impl App {
             KeyCode::Char('t') => self.open_theme_picker(),
             KeyCode::Char('?') | KeyCode::F(1) => self.modal = Some(Modal::Help { scroll: 0 }),
             KeyCode::Char('q') => {
-                if b.transfer.is_some() {
-                    self.modal = Some(Modal::Confirm {
-                        message: "A transfer is running. Cancel it and disconnect?".into(),
-                        action: ConfirmAction::Disconnect,
-                    });
+                let message = if b.transfer.is_some() {
+                    "A transfer is running. Cancel it and disconnect?".to_string()
                 } else {
-                    self.disconnect();
-                }
+                    format!("Disconnect from {}?", b.label)
+                };
+                self.modal = Some(Modal::Confirm {
+                    message,
+                    action: ConfirmAction::Disconnect,
+                });
             }
             _ => {}
         }
